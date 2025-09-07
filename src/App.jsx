@@ -4,7 +4,7 @@ import { ApiProvider } from './ApiContext';
 import Header from './Header';
 import './App.css';
 const API_KEY = ' d158fd42';
-const API_URL = `http://www.omdbapi.com/?i=tt3896198&apikey=d158fd42&`;
+const API_URL = `https://www.omdbapi.com/?i=tt3896198&apikey=d158fd42&`;
 const tmdbAPI_URL = 'https://api.themoviedb.org/3/trending/movie/week';
 const tmdbPoster = 'https://api.themoviedb.org/3/movie';
 const tmdbActors = 'https://api.themoviedb.org/3/person/popular';
