@@ -180,7 +180,7 @@ const MovieList = ({ movies, state, details, poster, actorsDetails, ActorClick, 
           <div className='end'>
 
             <span>For more Info, Contact me on:</span>
-            <a href='www.linkedin.com/in/muhammad-shakeeb-amin-4307951a5' target='_blank' rel="noreferrer">
+            <a href='https://linkedin.com/in/muhammad-shakeeb-amin-4307951a5' target='_blank' rel="noreferrer">
               <img src='/Images/linkedin-black-seeklogo.png' alt='LinkedIn' className='linkedin'></img>
             </a>
            
