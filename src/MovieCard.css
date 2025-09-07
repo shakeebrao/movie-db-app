@@ -1,0 +1,117 @@
+
+:root{
+  --mc-img-h: 55vh;   
+  --mc-radius: 12px;
+}
+
+.movie-card-img { cursor:pointer; }
+.movie-card-title { cursor:pointer; }
+.movie-card {
+  min-width: 200px;
+  flex-shrink: 0;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.movie-credits{
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: var(--mc-radius);
+  overflow: visible;
+  background: transparent;
+}
+.movie-credits-hero {
+  position: relative;
+  height: var(--mc-img-h);
+  max-height: var(--mc-img-max);
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--mc-radius) var(--mc-radius) 0 0; 
+}
+.movie-credits-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position:center;
+  display: block;
+  border-radius: inherit;
+  z-index: 0;
+  position: relative;
+}
+.movie-credits-hero::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.52));
+  pointer-events: none;
+  z-index: 1;
+}
+.movie-credits-title{
+  position: absolute;
+  bottom: 24px;               
+  left: 24px;
+  right: 24px;
+  margin: 0;
+  padding: 15px;
+  color: #fff;
+  font-size: clamp(1.6rem, 3.6vw, 2.8rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  z-index: 2;                
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: calc(100% - 48px);
+}
+
+.movie-credits-content{
+  position: relative;
+  z-index: 3;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+  padding: 18px 16px;
+  border-radius: 0 0 var(--mc-radius) var(--mc-radius);
+  box-shadow: 0 8px 30px rgba(10,10,10,0.04);
+  box-sizing: border-box;
+}
+.movie-credits-rating,
+.movie-credits-votes,
+.movie-credits-awards,
+.movie-credits-actors,
+.movie-credits-profit,
+.movie-credits-director,
+.movie-credits-genre,
+.movie-credits-plot,
+.movie-credits-date,
+.movie-credits-time,
+.movie-credits-writer,
+.movie-credits-metascore,
+.movie-credits-language {
+  margin: 0;
+  color: #f1e9e9;
+  background: rgba(27, 26, 26, 0.96);
+  padding: 10px 12px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  font-size: 0.96rem;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.movie-credits-language {
+  align-self: start;
+}
+@media (max-width: 980px){
+  :root { --mc-img-h: 44vh; --mc-img-max: 420px; }
+  .movie-credits-hero { height: var(--mc-img-h); max-height: var(--mc-img-max); border-radius: 10px 10px 0 0; }
+  .movie-credits-img { height: 100%; max-height: var(--mc-img-max); }
+  .movie-credits-title { left: 16px; bottom: 16px; font-size: 1.5rem; max-width: calc(100% - 32px); }
+  .movie-credits-content { padding: 12px; border-radius: 0 0 10px 10px; }
+}
