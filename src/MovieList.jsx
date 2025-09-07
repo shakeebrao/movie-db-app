@@ -181,15 +181,15 @@ const MovieList = ({ movies, state, details, poster, actorsDetails, ActorClick, 
 
             <span>For more Info, Contact me on:</span>
             <a href='https://www.linkedin.com/in/mohammed-shakeeb-a4b7241b3/' target='_blank' rel="noreferrer">
-              <img src='/images/linkedin-black-seeklogo.png' alt='LinkedIn' className='linkedin'></img>
+              <img src='/Images/linkedin-black-seeklogo.png' alt='LinkedIn' className='linkedin'></img>
             </a>
            
             <a href='https://github.com/shakeebrao' target='_blank' rel="noreferrer">
-            <img src='/images/github_PNG40.png' alt='GitHub' className='github'></img>
+            <img src='/Images/github_PNG40.png' alt='GitHub' className='github'></img>
             </a>
             <a href=' https://x.com/Updates1Top5' target='_blank' rel="noreferrer">
             <div className='icon-wrap'>
-            <img src='/images/X.jpg' alt='X' className='twitter'></img>
+            <img src='/Images/X.jpg' alt='X' className='twitter'></img>
 
 
             </div>
