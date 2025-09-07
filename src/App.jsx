@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MovieList from './MovieList';
 import { ApiProvider } from './ApiContext';
-import Header from './header';
+import Header from './Header';
 import './App.css';
 const API_KEY = ' d158fd42';
 const API_URL = `http://www.omdbapi.com/?i=tt3896198&apikey=d158fd42&`;
